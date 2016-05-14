@@ -3,13 +3,6 @@
 #
 # Notice that this problem has no assumptions that we had in the earlier problem.
 
-def value_of_nth_node(ll, n)
-end
+def find_nth_from_last(ll, n)
 
-
-require "minitest/autorun"
-
-class TestValueOfNthNode < Minitest::Test
-  def setup
-  end
 end

@@ -1,3 +1,11 @@
+class Object
+  def try(method_name)
+    return nil if self.nil?
+
+    self.send(method_name)
+  end
+end
+
 class LinkedListNode
   attr_accessor :value, :next
 
@@ -26,8 +34,5 @@ class LinkedList
   end
 end
 
-# ll = LinkedList.new
-# ll.insert(1)
-# ll.insert(2)
-# ll.insert(2)
-# puts ll.inspect
+class TestLinkedList < Minitest::Test
+end
