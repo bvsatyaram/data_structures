@@ -3,7 +3,7 @@
 #
 # Assume that the linked is in non-empty and is of length at least 'n'
 
-require_relative '00-implement'
+require_relative 'linked_list'
 
 def value_of_nth_node(ll, n)
   current_node = ll.head
@@ -16,7 +16,7 @@ end
 
 require "minitest/autorun"
 
-class TestMeme < Minitest::Test
+class TestValueOfNthNode < Minitest::Test
   def setup
     @long_linked_list = LinkedList.new
     (1..100).each do |i|
